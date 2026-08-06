@@ -12,7 +12,7 @@ public class BaseTest {
 
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
-		// webdriver initialization
+		// webdriver initialization to get webdriver instance from DriverFactory class
 		driver = DriverFactory.getInstance().getDriver();
 		driver.get(utillities.FrameworkUtil.readProperty("newToursUrl"));
 
