@@ -1,5 +1,8 @@
 package tests;
 
-public class SupportPageTest {
-
+public class SupportPageTest extends BaseTest {
+  public void verifySupportPage()
+  {
+    
+  }
 }
