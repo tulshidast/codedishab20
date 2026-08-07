@@ -14,6 +14,9 @@ public class SupportPage extends BasePage {
 	@FindBy(css = "img[src='images/home.gif']")
 	WebElement backToHomeButton;
 
+	/**
+	 * Clicks the "Back to Home" button on the Support page.
+	 */
 	public void clickBackToHome() {
 		backToHomeButton.click();
 	}
