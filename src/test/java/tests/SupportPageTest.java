@@ -6,5 +6,4 @@ public class SupportPageTest extends BaseTest {
 	public void testSupportPageNavigation() {
 		// Implement test logic for Support page navigation
 	}
-
 }
