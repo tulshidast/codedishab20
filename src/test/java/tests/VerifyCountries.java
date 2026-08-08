@@ -16,7 +16,7 @@ public class VerifyCountries extends BaseTest {
 	RegistrationPage registrationPage;
 
 	@Test(description = "Verify that all countries are present in the dropdown on the registration page", groups = {
-			"regression" })
+			"regression", "smoke" })
 	public void verifyCountriesInDropdown() {
 
 		// Initialize the LoginPage object
