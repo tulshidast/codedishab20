@@ -1,6 +1,7 @@
 package tests;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.util.List;
@@ -66,7 +67,7 @@ public class VerifyCountries extends BaseTest {
 		// Click on the "REGISTER" link to navigate to the registration page
 		loginPage.clickRegisterLink();
 		utillities.FrameworkUtil.waitForElementToBeVisible(driver, registrationPage.getCountryDropdown());
-		assertTrue(registrationPage.getCountryDropdown().isDisplayed(),
+		assertFalse(registrationPage.getCountryDropdown().isDisplayed(),
 				"Country dropdown is not displayed on the registration page.");
 		assertEquals(registrationPage.getAllOtionsFromCountryDropdown(), countries,
 				"Country dropdown does not contain all expected countries.");
